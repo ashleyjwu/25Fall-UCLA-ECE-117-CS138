@@ -2,7 +2,7 @@
 from pwn import *
 
 context.terminal = ['tmux', 'splitw', '-h']
-exe = ELF("./format-me-test")
+exe = ELF("./format-me")
 
 r = process([exe.path])
 # r = gdb.debug([exe.path]) # if you need to use gdb debug, please de-comment this line, and comment last line
